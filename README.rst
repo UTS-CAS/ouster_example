@@ -27,3 +27,7 @@ License
 ========
 
 BSD 3-Clause License, `details <LICENSE>`_
+
+Additional changes (Yujun Lai)
+========
+* Modified timestamps so they rely on the ROS timestamp rather than time from sensor start. ROS timestamp based on ros master device's time.

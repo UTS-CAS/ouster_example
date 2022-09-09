@@ -6,3 +6,8 @@ python/**/*.egg-info/
 python/**/*.so
 python/**/*.dll
 ouster_ros/ouster_multi.launch
+python/**/*.pyd
+
+# visual studio
+.vs/
+out/

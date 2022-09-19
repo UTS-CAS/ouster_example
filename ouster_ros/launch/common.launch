@@ -32,9 +32,9 @@
     args="-d $(arg rviz_config)"/>
 
   <!-- for compatibility with < 2.0 rosbags -->
-  <node pkg="topic_tools" name="relay_lidar" type="relay"
+  <node pkg="topic_tools" name="$(arg ouster_ns)_relay_lidar" type="relay"
     args="/os_node/lidar_packets /$(arg ouster_ns)/lidar_packets"/>
-  <node pkg="topic_tools" name="relay_imu" type="relay"
+  <node pkg="topic_tools" name="$(arg ouster_ns)_relay_imu" type="relay"
     args="/os_node/imu_packets /$(arg ouster_ns)/imu_packets"/>
 
 </launch>
